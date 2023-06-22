@@ -19,6 +19,7 @@
 		11BD99B32A44DA5500DBAF02 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99B22A44DA5500DBAF02 /* ContactDetailsView.swift */; };
 		11BD99B52A44DCB200DBAF02 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD99B42A44DCB200DBAF02 /* Storyboard.storyboard */; };
 		11BD99B82A44E2DC00DBAF02 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99B72A44E2DC00DBAF02 /* NumbersView.swift */; };
+		11BD99BA2A44E7B100DBAF02 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99B92A44E7B100DBAF02 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		11BD99B22A44DA5500DBAF02 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		11BD99B42A44DCB200DBAF02 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		11BD99B72A44E2DC00DBAF02 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
+		11BD99B92A44E7B100DBAF02 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				11BD999C2A44CE1E00DBAF02 /* ContentView.swift */,
 				11BD99AE2A44D10A00DBAF02 /* ContactsView.swift */,
 				11BD99B72A44E2DC00DBAF02 /* NumbersView.swift */,
+				11BD99B92A44E7B100DBAF02 /* SwiftUIView.swift */,
 				11BD99B22A44DA5500DBAF02 /* ContactDetailsView.swift */,
 				11BD99B42A44DCB200DBAF02 /* Storyboard.storyboard */,
 				11BD99B02A44D72000DBAF02 /* ContactRowView.swift */,
@@ -166,6 +169,7 @@
 				11BD999D2A44CE1E00DBAF02 /* ContentView.swift in Sources */,
 				11BD99B12A44D72000DBAF02 /* ContactRowView.swift in Sources */,
 				11BD99B82A44E2DC00DBAF02 /* NumbersView.swift in Sources */,
+				11BD99BA2A44E7B100DBAF02 /* SwiftUIView.swift in Sources */,
 				11BD99AB2A44CEEA00DBAF02 /* Person.swift in Sources */,
 				11BD99AD2A44CF6000DBAF02 /* ContactViewModel.swift in Sources */,
 				11BD99AF2A44D10A00DBAF02 /* ContactsView.swift in Sources */,

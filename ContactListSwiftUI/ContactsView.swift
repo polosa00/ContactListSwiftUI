@@ -21,7 +21,7 @@ struct ContactsView: View {
                 }
             }
             .listStyle(.plain)
-            .navigationTitle("Contacts")
+            .navigationTitle("Contact list")
         }
     }
 }

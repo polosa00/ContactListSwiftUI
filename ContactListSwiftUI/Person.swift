@@ -10,7 +10,7 @@ import Foundation
 
 struct Person: Identifiable {
     
-    var id: Int
+    var id = UUID()
     let name: String
     let surname: String
     let phone: String
@@ -18,16 +18,20 @@ struct Person: Identifiable {
     var fullName: String {
         "\(name) \(surname)"
     }
+    
+    var rows: [String] {
+        [phone, mail]
+    }
     static func getContact() -> Person {
      
         
-        let id = DataStore.shared.id.randomElement() ?? 1
+//        let id = DataStore.shared.id.randomElement() ?? 1
         let surname = DataStore.shared.surnames.randomElement() ?? "Pol"
         let name = DataStore.shared.names.randomElement() ?? "Alex"
         let phone = DataStore.shared.phones.randomElement() ?? "009"
         let mail = DataStore.shared.phones.randomElement() ?? "999999"
         
-        return Person(id: id, name: name, surname: surname, phone: phone, mail: mail)
+        return Person( name: name, surname: surname, phone: phone, mail: mail)
     }
     static func getContactList() -> [Person] {
         
@@ -37,12 +41,12 @@ struct Person: Identifiable {
         let surnames = DataStore.shared.surnames.shuffled()
         let phones = DataStore.shared.phones.shuffled()
         let mails = DataStore.shared.mails.shuffled()
-        let id = DataStore.shared.id
+//        let id = DataStore.shared.id
         
         (0...9).forEach { index in
             persons.append(
                 Person(
-                    id: id[index],
+//                    id: id[index],
                     name: names[index],
                     surname: surnames[index],
                     phone: phones[index],

@@ -1,5 +1,5 @@
 //
-//  NumbersView.swift
+//  SwiftUIView.swift
 //  ContactListSwiftUI
 //
 //  Created by Александр Полочанин on 22.06.23.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct NumbersView: View {
+struct SwiftUIView: View {
+    
     let contacts: [Person]
     
     @State private var singleSelection: UUID?
@@ -38,8 +39,8 @@ struct NumbersView: View {
     }
 }
 
-struct NumbersView_Previews: PreviewProvider {
+struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersView(contacts: Person.getContactList())
+        SwiftUIView(contacts: Person.getContactList())
     }
 }
