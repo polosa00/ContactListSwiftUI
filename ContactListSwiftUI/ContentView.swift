@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var person = ContactViewModel()
+   
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            ContactsView(contacts: person.contacts)
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Contacts")
+                }
+            NumbersView()
+                .tabItem {
+                    Image(systemName: "phone")
+                    Text("Numbers")
+                }
         }
-        .padding()
+        
     }
 }
 
