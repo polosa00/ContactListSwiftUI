@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct ContactsView: View {
-    let contacts: [Person]
     
+    private let contacts = PersonViewModel()
     
     var body: some View {
         NavigationStack {
-            List(contacts) { contact in
+            List(contacts.contacts) { contact in
                 NavigationLink(
-                    destination: ContactDetailsView(contact: contact)
+                    destination: ContactDetailsView()
                 ) {
-                    ContactRowView(contact: contact)
+                    HStack {
+                        Text("\(contact.name)")
+                        Text("\(contact.surname)")
+                    }
                 }
             }
             .listStyle(.plain)
@@ -28,6 +31,6 @@ struct ContactsView: View {
 
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsView(contacts: Person.getContactList())
+        ContactsView()
     }
 }

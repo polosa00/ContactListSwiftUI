@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Person: Identifiable {
     
     var id = UUID()
@@ -19,13 +18,9 @@ struct Person: Identifiable {
         "\(name) \(surname)"
     }
     
-    var rows: [String] {
-        [phone, mail]
-    }
+    
     static func getContact() -> Person {
      
-        
-//        let id = DataStore.shared.id.randomElement() ?? 1
         let surname = DataStore.shared.surnames.randomElement() ?? "Pol"
         let name = DataStore.shared.names.randomElement() ?? "Alex"
         let phone = DataStore.shared.phones.randomElement() ?? "009"
@@ -41,12 +36,10 @@ struct Person: Identifiable {
         let surnames = DataStore.shared.surnames.shuffled()
         let phones = DataStore.shared.phones.shuffled()
         let mails = DataStore.shared.mails.shuffled()
-//        let id = DataStore.shared.id
         
         (0...9).forEach { index in
             persons.append(
                 Person(
-//                    id: id[index],
                     name: names[index],
                     surname: surnames[index],
                     phone: phones[index],

@@ -13,13 +13,11 @@
 		11BD99A22A44CE1F00DBAF02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BD99A12A44CE1F00DBAF02 /* Preview Assets.xcassets */; };
 		11BD99A92A44CE9C00DBAF02 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99A82A44CE9C00DBAF02 /* DataStore.swift */; };
 		11BD99AB2A44CEEA00DBAF02 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99AA2A44CEEA00DBAF02 /* Person.swift */; };
-		11BD99AD2A44CF6000DBAF02 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99AC2A44CF6000DBAF02 /* ContactViewModel.swift */; };
+		11BD99AD2A44CF6000DBAF02 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99AC2A44CF6000DBAF02 /* PersonViewModel.swift */; };
 		11BD99AF2A44D10A00DBAF02 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99AE2A44D10A00DBAF02 /* ContactsView.swift */; };
 		11BD99B12A44D72000DBAF02 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99B02A44D72000DBAF02 /* ContactRowView.swift */; };
 		11BD99B32A44DA5500DBAF02 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99B22A44DA5500DBAF02 /* ContactDetailsView.swift */; };
-		11BD99B52A44DCB200DBAF02 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD99B42A44DCB200DBAF02 /* Storyboard.storyboard */; };
 		11BD99B82A44E2DC00DBAF02 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99B72A44E2DC00DBAF02 /* NumbersView.swift */; };
-		11BD99BA2A44E7B100DBAF02 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD99B92A44E7B100DBAF02 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,13 +28,11 @@
 		11BD99A12A44CE1F00DBAF02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11BD99A82A44CE9C00DBAF02 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		11BD99AA2A44CEEA00DBAF02 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		11BD99AC2A44CF6000DBAF02 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		11BD99AC2A44CF6000DBAF02 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		11BD99AE2A44D10A00DBAF02 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		11BD99B02A44D72000DBAF02 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 		11BD99B22A44DA5500DBAF02 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
-		11BD99B42A44DCB200DBAF02 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		11BD99B72A44E2DC00DBAF02 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
-		11BD99B92A44E7B100DBAF02 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +69,11 @@
 				11BD999C2A44CE1E00DBAF02 /* ContentView.swift */,
 				11BD99AE2A44D10A00DBAF02 /* ContactsView.swift */,
 				11BD99B72A44E2DC00DBAF02 /* NumbersView.swift */,
-				11BD99B92A44E7B100DBAF02 /* SwiftUIView.swift */,
 				11BD99B22A44DA5500DBAF02 /* ContactDetailsView.swift */,
-				11BD99B42A44DCB200DBAF02 /* Storyboard.storyboard */,
 				11BD99B02A44D72000DBAF02 /* ContactRowView.swift */,
 				11BD99A82A44CE9C00DBAF02 /* DataStore.swift */,
 				11BD99AA2A44CEEA00DBAF02 /* Person.swift */,
-				11BD99AC2A44CF6000DBAF02 /* ContactViewModel.swift */,
+				11BD99AC2A44CF6000DBAF02 /* PersonViewModel.swift */,
 				11BD999E2A44CE1F00DBAF02 /* Assets.xcassets */,
 				11BD99A02A44CE1F00DBAF02 /* Preview Content */,
 			);
@@ -154,7 +148,6 @@
 			files = (
 				11BD99A22A44CE1F00DBAF02 /* Preview Assets.xcassets in Resources */,
 				11BD999F2A44CE1F00DBAF02 /* Assets.xcassets in Resources */,
-				11BD99B52A44DCB200DBAF02 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,9 +162,8 @@
 				11BD999D2A44CE1E00DBAF02 /* ContentView.swift in Sources */,
 				11BD99B12A44D72000DBAF02 /* ContactRowView.swift in Sources */,
 				11BD99B82A44E2DC00DBAF02 /* NumbersView.swift in Sources */,
-				11BD99BA2A44E7B100DBAF02 /* SwiftUIView.swift in Sources */,
 				11BD99AB2A44CEEA00DBAF02 /* Person.swift in Sources */,
-				11BD99AD2A44CF6000DBAF02 /* ContactViewModel.swift in Sources */,
+				11BD99AD2A44CF6000DBAF02 /* PersonViewModel.swift in Sources */,
 				11BD99AF2A44D10A00DBAF02 /* ContactsView.swift in Sources */,
 				11BD99A92A44CE9C00DBAF02 /* DataStore.swift in Sources */,
 				11BD999B2A44CE1E00DBAF02 /* ContactListSwiftUIApp.swift in Sources */,
