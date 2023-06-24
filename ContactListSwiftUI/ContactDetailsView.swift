@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContactDetailsView: View {
-    private let contact = PersonViewModel()
+    let contact: Person
     
     var body: some View {
         NavigationStack {
@@ -24,16 +24,16 @@ struct ContactDetailsView: View {
                     HStack {
                         Image(systemName: "phone")
                             .foregroundColor(.blue)
-                        Text("\(contact.contact.phone)")
+                        Text("\(contact.phone)")
                     }
                     HStack {
                         Image(systemName: "tray")
                             .foregroundColor(.blue)
-                        Text("\(contact.contact.mail)")
+                        Text("\(contact.mail)")
                     }
                 }
             }
-            .navigationTitle(contact.contact.fullName)
+            .navigationTitle(contact.fullName)
             
         }
     }
@@ -41,7 +41,7 @@ struct ContactDetailsView: View {
 
 struct ContactDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView()
+        ContactDetailsView(contact: Person.getContactList().first!)
     }
 }
 

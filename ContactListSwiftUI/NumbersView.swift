@@ -11,12 +11,12 @@ struct NumbersView: View {
     
     @State private var singleSelection: String?
     
-    private let contacts = PersonViewModel()
+    let contacts: [Person]
     
     var body: some View {
         NavigationView {
             List(selection: $singleSelection) {
-                ForEach(contacts.contacts) { contact in
+                ForEach(contacts) { contact in
                     Section(header: Text("\(contact.fullName)")) {
                         HStack {
                             Image(systemName: "phone")
@@ -39,6 +39,6 @@ struct NumbersView: View {
 
 struct NumbersView_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersView()
+        NumbersView(contacts: Person.getContactList())
     }
 }
