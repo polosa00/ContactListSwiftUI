@@ -25,6 +25,7 @@ struct ContactsView: View {
             }
             .listStyle(.plain)
             .navigationTitle("Contact list")
+            
         }
     }
 }

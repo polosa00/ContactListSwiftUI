@@ -16,7 +16,7 @@ struct ContactDetailsView: View {
                 List {
                     HStack {
                         Spacer()
-                        Image(systemName: "person")
+                        Image(systemName: "person.fill")
                             .resizable()
                             .frame(width: 150, height: 150)
                         Spacer()
@@ -34,6 +34,7 @@ struct ContactDetailsView: View {
                 }
             }
             .navigationTitle(contact.contact.fullName)
+            
         }
     }
 }
