@@ -31,7 +31,7 @@ struct NumbersView: View {
                     }
                 }
             }
-            .listStyle(.plain)
+
             .navigationTitle("Contact List")
         }
     }
