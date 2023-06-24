@@ -21,20 +21,11 @@ struct ContactDetailsView: View {
                             .frame(width: 150, height: 150)
                         Spacer()
                     }
-                    HStack {
-                        Image(systemName: "phone")
-                            .foregroundColor(.blue)
-                        Text("\(contact.phone)")
-                    }
-                    HStack {
-                        Image(systemName: "tray")
-                            .foregroundColor(.blue)
-                        Text("\(contact.mail)")
-                    }
+                    Label(contact.phone, systemImage: "phone")
+                    Label(contact.mail, systemImage: "tray")
                 }
             }
             .navigationTitle(contact.fullName)
-            
         }
     }
 }
